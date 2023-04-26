@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script type="text/javascript" charset="utf-8" src="script.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>電卓</title>
+  </head>
+
+  <body onLoad="init();">
+    <h1>電卓</h1>
+    <a href="history.html">計算履歴</a></li>
+    <a href="how2use.html">使い方</a></li>
+    <hr>
+    <form>
+      <input type="text", placeholder="(1+2)*3/4", class="form">
+      <input type="button" value="=" onclick="calculation()", class="btn_symbol">
+      <input type="text", class="form"><br>
+      <input type="button" value="(" onclick="insert_open()", class="btn_symbol">
+      <input type="button" value=")" onclick="insert_close()", class="btn_symbol">
+      <input type="button" value="^" onclick="insert_exp()", class="btn_symbol">
+      <input type="button" value="←" onclick="backspace()", class="btn_del">
+      <input type="button" value="AC" onclick="all_clear()", class="btn_del"><br>
+      <input type="button" value="7" onclick="insert_7()", class="btn_num">
+      <input type="button" value="8" onclick="insert_8()", class="btn_num">
+      <input type="button" value="9" onclick="insert_9()", class="btn_num">
+      <input type="button" value="/" onclick="insert_div()", class="btn_symbol">
+      <input type="button" value="Copy" onclick="copy()", class="btn_etc"><br>
+      <input type="button" value="4" onclick="insert_4()", class="btn_num">
+      <input type="button" value="5" onclick="insert_5()", class="btn_num">
+      <input type="button" value="6" onclick="insert_6()", class="btn_num">
+      <input type="button" value="*" onclick="insert_multi()", class="btn_symbol">
+      <input type="button" value="Paste" onclick="paste()", class="btn_etc"><br>
+      <input type="button" value="1" onclick="insert_1()", class="btn_num">
+      <input type="button" value="2" onclick="insert_2()", class="btn_num">
+      <input type="button" value="3" onclick="insert_3()", class="btn_num">
+      <input type="button" value="-" onclick="insert_sub()", class="btn_symbol">
+      <input type="button" value="Undo" onclick="undo()", class="btn_etc"><br>
+      <input type="button" value="0" onclick="insert_0()", class="btn_num">
+      <input type="button" value="." onclick="insert_point()", class="btn_num">
+      <input type="button" value="π" onclick="pi()", class="btn_num">
+      <input type="button" value="+" onclick="insert_add()", class="btn_symbol">
+      <input type="button" value="Redo" onclick="redo()", class="btn_etc"><br>
+    </form>
+  </body>
+</html>

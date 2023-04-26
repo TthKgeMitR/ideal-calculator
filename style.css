@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+canvas { border: 1px solid black; }
+
+.btn_num {
+    width: 19%;
+    height: 80px;
+    font-size: 40px;
+    background-color:#D9E5FF;
+}
+
+.btn_del {
+    width: 19%;
+    height: 80px;
+    font-size: 40px;
+    background-color: #FF1A6F;
+}
+
+.btn_symbol {
+    width: 19%;
+    height: 80px;
+    font-size: 40px;
+    background-color: #00FFFF;
+}
+
+.btn_etc {
+    width: 19%;
+    height: 80px;
+    font-size: 40px;
+    background-color: #99FF99;
+}
+
+.form {
+    width: 38%;
+    height: 50px;
+    font-size: 40px;
+}
+
+.small_del {
+    width: 60px;
+    height: 40px;
+    font-size: 16px;
+    background-color: #FF1A6F;
+}
+
+.small_etc {
+    width: 60px;
+    height: 40px;
+    font-size: 16px;
+    background-color: #99FF99;
+}

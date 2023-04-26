@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>使い方</title>
+  </head>
+
+  <body onLoad="init();">
+    <h1>使い方</h1>
+    <a href="index.html">電卓</a>
+    <a href="history.html">計算履歴</a><br>
+    <hr>
+    <hr>
+    ボタンを押すか左のフォームに直接計算式を入力して「=」を押すと，右のフォームに解が表示されます．<br>
+    解が表示されている状態で演算子を入力することで，解をもとに次の計算を開始できます．<br>
+    解が表示されている状態で数字を入力すると，計算式と解をクリアして新しい計算を開始します．<br><br>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>ボタン</th>
+          <th>説明</th>
+        </tr>
+        <tr>
+          <th>
+            <form>
+              <input type="button" value="←" onclick="nothing()", class="small_del">
+            </form>
+          </th>
+          <th>1文字消します．</th>
+        </tr>
+        <tr>
+          <th>
+            <form>
+              <input type="button" value="AC" onclick="nothing()", class="small_del">
+            </form>
+          </th>
+          <th>計算式と解をクリアします．</th>
+        </tr>
+        <tr>
+          <th>
+            <form>
+              <input type="button" value="COPY" onclick="nothing()", class="small_etc">
+            </form>
+          </th>
+          <th>解をクリップボードにコピーします．</th>
+        </tr>
+        <tr>
+          <th>
+            <form>
+              <input type="button" value="Undo" onclick="nothing()", class="small_etc">
+            </form>
+          </th>
+          <th>押すたびに1つ古い式と解を表示します．</th>
+        </tr>
+        <tr>
+          <th>
+            <form>
+              <input type="button" value="Redo" onclick="nothing()", class="small_etc">
+            </form>
+          </th>
+          <th>押すたびに1つ新しい式と解を表示します．</th>
+        </tr>
+      </thead>
+    </table>
+
+  </body>
+</html>
